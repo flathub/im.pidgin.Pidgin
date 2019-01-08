@@ -1,7 +1,7 @@
 {
   "id": "im.pidgin.Pidgin",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.28",
+  "runtime-version": "3.30",
   "sdk": "org.gnome.Sdk",
   "command": "pidgin",
   "rename-desktop-file": "pidgin.desktop",
@@ -31,14 +31,23 @@
     "*.a"
   ],
   "modules": [
+    "shared-modules/gtk2/gtk2.json",
     {
       "name": "gtkspell",
       "rm-configure": true,
+      "config-opts": [
+        "--disable-gtk-doc",
+        "--disable-static"
+      ],
       "sources": [
         {
           "type": "archive",
           "url": "https://sourceforge.net/projects/gtkspell/files/2.0.16/gtkspell-2.0.16.tar.gz",
           "sha256": "8fc7dc560167b2cb7193e76aca625a152dc19b0ebf49816b78539cbb90d80d02"
+        },
+        {
+          "type": "patch",
+          "path": "enchant-2.diff"
         },
         {
           "type": "script",
@@ -55,8 +64,8 @@
         {
           "type": "git",
           "url": "https://gitlab.freedesktop.org/libnice/libnice.git",
-          "tag": "0.1.14",
-          "commit": "6bfea0d063fb358a44e8800eae314520a2babd61"
+          "tag": "0.1.15",
+          "commit": "e25c3e5113c7b7002a78bcca2ecf058bbf7de6d4"
         }
       ]
     },
@@ -83,7 +92,8 @@
         "--disable-qt4",
         "--disable-python",
         "--disable-gtk",
-        "--disable-gtk3"
+        "--disable-gtk3",
+        "--disable-static"
       ],
       "sources": [
         {
@@ -94,12 +104,25 @@
       ]
     },
     {
+      "name": "libidn",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://ftp.gnu.org/gnu/libidn/libidn-1.35.tar.gz",
+          "sha256": "f11af1005b46b7b15d057d7f107315a1ad46935c7fcdf243c16e46ec14f0fe1e"
+        }
+      ]
+    },
+    {
       "name": "pidgin",
       "config-opts": [
+        "--disable-static",
         "--disable-meanwhile",
         "--disable-nm",
         "--enable-cyrus-sasl",
-        "--disable-tk"
+        "--disable-tk",
+        "--disable-tcl",
+        "--disable-consoleui"
       ],
       "sources": [
         {
