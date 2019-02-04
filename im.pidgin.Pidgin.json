@@ -122,7 +122,10 @@
         "--enable-cyrus-sasl",
         "--disable-tk",
         "--disable-tcl",
-        "--disable-consoleui"
+        "--disable-consoleui",
+        "--disable-gnutls",
+        "--with-system-ssl-certs=/etc/ssl/certs",
+        "--disable-doxygen"
       ],
       "sources": [
         {
