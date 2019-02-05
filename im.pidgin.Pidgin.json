@@ -122,11 +122,12 @@
 				"--without-des",
 				"--disable-gssapi",
 				"--enable-cram",
+				"--enable-scram",
 				"--enable-digest",
 				"--enable-otp",
 				"--enable-plain",
 				"--enable-login",
-				"--with-plugindir=/app/lib/sasl2:/usr/lib/sasl2"
+				"--with-plugindir=/app/lib/sasl2"
 			],
 			"no-parallel-make": true,
 			"sources": [
