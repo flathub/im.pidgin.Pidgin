@@ -4,8 +4,8 @@
 	"runtime-version": "3.30",
 	"sdk": "org.gnome.Sdk",
 	"command": "pidgin",
-	"rename-desktop-file": "pidgin.desktop",
 	"rename-icon": "pidgin",
+	"rename-desktop-file": "pidgin.desktop",
 	"rename-appdata-file": "pidgin.appdata.xml",
 	"finish-args": [
 		"--share=ipc",
