@@ -64,8 +64,7 @@
 				{
 					"type": "git",
 					"url": "https://gitlab.freedesktop.org/libnice/libnice.git",
-					"tag": "0.1.15",
-					"commit": "e25c3e5113c7b7002a78bcca2ecf058bbf7de6d4"
+					"commit": "6b1eec0630516698ac9cd3343ef7eb8515fee231"
 				}
 			]
 		},
