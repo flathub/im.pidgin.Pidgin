@@ -1,166 +1,172 @@
 {
-	"id": "im.pidgin.Pidgin",
-	"runtime": "org.gnome.Platform",
-	"runtime-version": "3.32",
-	"sdk": "org.gnome.Sdk",
-	"command": "pidgin",
-	"rename-icon": "pidgin",
-	"rename-desktop-file": "pidgin.desktop",
-	"rename-appdata-file": "pidgin.appdata.xml",
-	"finish-args": [
-		"--share=ipc",
-		"--socket=x11",
-		"--share=network",
-		"--socket=pulseaudio",
-		"--persist=.purple",
-		"--filesystem=xdg-download",
-		"--talk-name=org.freedesktop.Notifications",
-		"--system-talk-name=org.freedesktop.Avahi"
-	],
-	"cleanup": [
-		"/include",
-		"/share/man",
-		"/share/info",
-		"/share/gtk-doc",
-		"/share/aclocal",
-		"*.la",
-		"*.a"
-	],
-	"modules": [
-		"shared-modules/gtk2/gtk2.json",
-		{
-			"name": "gtkspell",
-			"rm-configure": true,
-			"config-opts": [
-				"--disable-gtk-doc",
-				"--disable-static"
-			],
-			"sources": [
-				{
-					"type": "archive",
-					"url": "https://sourceforge.net/projects/gtkspell/files/2.0.16/gtkspell-2.0.16.tar.gz",
-					"sha256": "8fc7dc560167b2cb7193e76aca625a152dc19b0ebf49816b78539cbb90d80d02"
-				},
-				{
-					"type": "patch",
-					"path": "enchant-2.diff"
-				},
-				{
-					"type": "script",
-					"commands": [
-						"autoreconf -sfi"
-					],
-					"dest-filename": "autogen.sh"
-				}
-			]
-		},
-		{
-			"name": "libnice",
+  "id": "im.pidgin.Pidgin",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "3.32",
+  "sdk": "org.gnome.Sdk",
+  "command": "pidgin",
+  "rename-icon": "pidgin",
+  "rename-desktop-file": "pidgin.desktop",
+  "rename-appdata-file": "pidgin.appdata.xml",
+  "finish-args": [
+    "--share=ipc",
+    "--socket=x11",
+    "--share=network",
+    "--socket=pulseaudio",
+    "--persist=.purple",
+    "--filesystem=xdg-download",
+    "--talk-name=org.freedesktop.Notifications",
+    "--system-talk-name=org.freedesktop.Avahi"
+  ],
+  "cleanup": [
+    "/include",
+    "/share/man",
+    "/share/info",
+    "/share/gtk-doc",
+    "/share/aclocal",
+    "*.la",
+    "*.a"
+  ],
+  "modules": [
+    "shared-modules/gtk2/gtk2.json",
+    {
+      "name": "gtkspell",
+      "rm-configure": true,
+      "config-opts": [
+        "--disable-gtk-doc",
+        "--disable-static"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://sourceforge.net/projects/gtkspell/files/2.0.16/gtkspell-2.0.16.tar.gz",
+          "sha256": "8fc7dc560167b2cb7193e76aca625a152dc19b0ebf49816b78539cbb90d80d02"
+        },
+        {
+          "type": "patch",
+          "path": "enchant-2.diff"
+        },
+        {
+          "type": "script",
+          "commands": [
+            "autoreconf -sfi"
+          ],
+          "dest-filename": "autogen.sh"
+        }
+      ]
+    },
+    {
+      "name": "libnice",
       "config-opts": [
         "--enable-compile-warnings=minimum"
       ],
-			"sources": [
-				{
-					"type": "git",
-					"url": "https://gitlab.freedesktop.org/libnice/libnice.git",
-					"commit": "6b1eec0630516698ac9cd3343ef7eb8515fee231"
-				}
-			]
-		},
-		{
-			"name": "farstream",
-			"sources": [
-				{
-					"type": "archive",
-					"url": "http://freedesktop.org/software/farstream/releases/farstream/farstream-0.2.8.tar.gz",
-					"sha256": "2b3b9c6b4f64ace8c83e03d1da5c5a2884c1cae10b35471072b574201ab38908"
-				}
-			]
-		},
-		{
-			"name": "avahi",
-			"cleanup": [ "/bin" ],
-			"config-opts": [
-				"--with-distro=none",
-				"--disable-libdaemon",
-				"--disable-core-docs",
-				"--disable-manpages",
-				"--disable-mono",
-				"--disable-qt3",
-				"--disable-qt4",
-				"--disable-python",
-				"--disable-gtk",
-				"--disable-gtk3",
-				"--disable-static"
-			],
-			"sources": [
-				{
-					"type": "archive",
-					"url": "https://avahi.org/download/avahi-0.7.tar.gz",
-					"sha256": "57a99b5dfe7fdae794e3d1ee7a62973a368e91e414bd0dfa5d84434de5b14804"
-				}
-			]
-		},
-		{
-			"name": "libidn",
-			"sources": [
-				{
-					"type": "archive",
-					"url": "https://ftp.gnu.org/gnu/libidn/libidn-1.35.tar.gz",
-					"sha256": "f11af1005b46b7b15d057d7f107315a1ad46935c7fcdf243c16e46ec14f0fe1e"
-				}
-			]
-		},
-		{
-			"name": "cyrus-sasl2",
-			"config-opts": [
-				"--with-dblib=berkeley",
-				"--without-pam",
-				"--without-opie",
-				"--without-des",
-				"--disable-gssapi",
-				"--enable-cram",
-				"--enable-scram",
-				"--enable-digest",
-				"--enable-otp",
-				"--enable-plain",
-				"--enable-login",
-				"--with-plugindir=/app/lib/sasl2"
-			],
-			"no-parallel-make": true,
-			"sources": [
-				{
-					"type": "archive",
-					"url": "https://www.cyrusimap.org/releases/cyrus-sasl-2.1.27.tar.gz",
-					"sha256": "26866b1549b00ffd020f188a43c258017fa1c382b3ddadd8201536f72efb05d5"
-				}
-			]
-		},
-		{
-			"name": "pidgin",
-			"config-opts": [
-				"--disable-static",
-				"--disable-meanwhile",
-				"--disable-nm",
-				"--enable-cyrus-sasl",
-				"--disable-tk",
-				"--disable-tcl",
-				"--disable-consoleui",
-				"--disable-gnutls",
-				"--with-system-ssl-certs=/etc/ssl/certs",
-				"--disable-doxygen"
-			],
-			"sources": [
-				{
-					"type": "archive",
-					"url": "https://sourceforge.net/projects/pidgin/files/Pidgin/2.13.0/pidgin-2.13.0.tar.bz2",
-					"sha256": "2747150c6f711146bddd333c496870bfd55058bab22ffb7e4eb784018ec46d8f"
-				}
-			],
-			"post-install": [
-				"chmod 755 /app/lib/pidgin/perl/auto/Pidgin/Pidgin.so",
-				"chmod 755 /app/lib/purple-2/perl/auto/Purple/Purple.so"
-			]
-		}
-	]
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://gitlab.freedesktop.org/libnice/libnice.git",
+          "tag": "0.1.16",
+          "commit": "5969b34e3acd9150506ed8d9d109c73665858f3e"
+        }
+      ]
+    },
+    {
+      "name": "farstream",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "http://freedesktop.org/software/farstream/releases/farstream/farstream-0.2.8.tar.gz",
+          "sha256": "2b3b9c6b4f64ace8c83e03d1da5c5a2884c1cae10b35471072b574201ab38908"
+        }
+      ]
+    },
+    {
+      "name": "avahi",
+      "cleanup": [ "/bin" ],
+      "config-opts": [
+        "--with-distro=none",
+        "--disable-libdaemon",
+        "--disable-core-docs",
+        "--disable-manpages",
+        "--disable-mono",
+        "--disable-qt3",
+        "--disable-qt4",
+        "--disable-python",
+        "--disable-gtk",
+        "--disable-gtk3",
+        "--disable-static"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://avahi.org/download/avahi-0.7.tar.gz",
+          "sha256": "57a99b5dfe7fdae794e3d1ee7a62973a368e91e414bd0dfa5d84434de5b14804"
+        }
+      ]
+    },
+    {
+      "name": "libidn",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://ftp.gnu.org/gnu/libidn/libidn-1.35.tar.gz",
+          "sha256": "f11af1005b46b7b15d057d7f107315a1ad46935c7fcdf243c16e46ec14f0fe1e"
+        }
+      ]
+    },
+    {
+      "name": "cyrus-sasl2",
+      "config-opts": [
+        "--with-dblib=berkeley",
+        "--without-pam",
+        "--without-opie",
+        "--without-des",
+        "--disable-gssapi",
+        "--enable-cram",
+        "--enable-scram",
+        "--enable-digest",
+        "--enable-otp",
+        "--enable-plain",
+        "--enable-login",
+        "--with-plugindir=/app/lib/sasl2"
+      ],
+      "no-parallel-make": true,
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://www.cyrusimap.org/releases/cyrus-sasl-2.1.27.tar.gz",
+          "sha256": "26866b1549b00ffd020f188a43c258017fa1c382b3ddadd8201536f72efb05d5"
+        }
+      ]
+    },
+    {
+      "name": "pidgin",
+      "config-opts": [
+        "--disable-static",
+        "--disable-meanwhile",
+        "--disable-nm",
+        "--enable-cyrus-sasl",
+        "--disable-tk",
+        "--disable-tcl",
+        "--disable-consoleui",
+        "--disable-gnutls",
+        "--with-system-ssl-certs=/etc/ssl/certs",
+        "--disable-doxygen"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://sourceforge.net/projects/pidgin/files/Pidgin/2.13.0/pidgin-2.13.0.tar.bz2",
+          "sha256": "2747150c6f711146bddd333c496870bfd55058bab22ffb7e4eb784018ec46d8f"
+        },
+        {
+          "type": "patch",
+          "path": "appdata.patch"
+        }
+      ],
+      "post-install": [
+        "chmod 755 /app/lib/pidgin/perl/auto/Pidgin/Pidgin.so",
+        "chmod 755 /app/lib/purple-2/perl/auto/Purple/Purple.so",
+        "sed -i 's/\\.<\\//<\\//g' /app/share/appdata/pidgin.appdata.xml"
+      ]
+    }
+  ]
 }

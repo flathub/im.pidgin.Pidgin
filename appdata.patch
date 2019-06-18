@@ -1,0 +1,24 @@
+diff -r 0462a04774f8 -r 0735cb6c4cae pidgin/data/pidgin.appdata.xml.in
+--- a/pidgin/data/pidgin.appdata.xml.in	Thu Mar 08 00:35:09 2018 -0600
++++ b/pidgin/data/pidgin.appdata.xml.in	Tue Jun 18 20:47:14 2019 +0200
+@@ -4,6 +4,7 @@
+ 
+ <application>
+   <id type="desktop">pidgin.desktop</id>
++  <name>Pidgin</name>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-2.0</project_license>
+   <_summary>Instant Messaging Client</_summary>
+@@ -25,5 +26,12 @@
+       <_caption>The buddy list showing friends on different networks.</_caption>
+     </screenshot>
+   </screenshots>
++  <releases>
++    <release date="2018-03-08" version="2.13.0"/>
++  </releases>
+   <updatecontact>devel@pidgin.im</updatecontact>
++  <content_rating type="oars-1.1">
++    <content_attribute id="social-chat">intense</content_attribute>
++    <content_attribute id="social-audio">intense</content_attribute>
++  </content_rating>
+ </application>
