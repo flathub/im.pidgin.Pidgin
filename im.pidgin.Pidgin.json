@@ -163,7 +163,7 @@
         "--disable-tk",
         "--disable-tcl",
         "--disable-consoleui",
-        "--with-pythin=python3",
+        "--with-python=python3",
         "--disable-gnutls",
         "--with-system-ssl-certs=/etc/ssl/certs",
         "--disable-doxygen"
