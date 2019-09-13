@@ -55,20 +55,6 @@
       ]
     },
     {
-      "name": "libnice",
-      "config-opts": [
-        "--enable-compile-warnings=minimum"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://gitlab.freedesktop.org/libnice/libnice.git",
-          "tag": "0.1.16",
-          "commit": "5969b34e3acd9150506ed8d9d109c73665858f3e"
-        }
-      ]
-    },
-    {
       "name": "farstream",
       "sources": [
         {
@@ -138,16 +124,6 @@
       ]
     },
     {
-      "name": "libgpg-error",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.36.tar.bz2",
-          "sha256": "babd98437208c163175c29453f8681094bcaf92968a15cafb1a276076b33c97c"
-        }
-      ]
-    },
-    {
       "name": "libgcrypt",
       "sources": [
         {
@@ -168,6 +144,16 @@
       ]
     },
     {
+      "name": "dbus-glib",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.110.tar.gz",
+          "sha256": "7ce4760cf66c69148f6bd6c92feaabb8812dee30846b24cd0f7395c436d7e825"
+        }
+      ]
+    },
+    {
       "name": "pidgin",
       "config-opts": [
         "--disable-static",
@@ -177,6 +163,7 @@
         "--disable-tk",
         "--disable-tcl",
         "--disable-consoleui",
+        "--with-pythin=python3",
         "--disable-gnutls",
         "--with-system-ssl-certs=/etc/ssl/certs",
         "--disable-doxygen"
@@ -190,6 +177,10 @@
         {
           "type": "patch",
           "path": "appdata.patch"
+        },
+        {
+          "type": "patch",
+          "path": "purple-remote-python3.patch"
         }
       ],
       "post-install": [
