@@ -1,0 +1,16 @@
+diff -r 02df346d26d0 -r ac2e05444162 libpurple/purple-remote
+--- a/libpurple/purple-remote	Thu Mar 08 22:51:37 2018 -0600
++++ b/libpurple/purple-remote	Fri Mar 09 10:20:40 2018 +0200
+@@ -13,8 +13,10 @@
+ 
+ import xml.dom.minidom 
+ 
+-sys.stdin = codecs.getwriter('utf-8')(sys.stdin);
+-sys.stdout = codecs.getwriter('utf-8')(sys.stdout);
++if hasattr(sys.stdout, 'buffer'):
++    sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer)
++else:
++    sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
+ 
+ xml.dom.minidom.Element.all   = xml.dom.minidom.Element.getElementsByTagName
+ 
