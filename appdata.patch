@@ -14,7 +14,7 @@ diff -r 0462a04774f8 -r 0735cb6c4cae pidgin/data/pidgin.appdata.xml.in
      </screenshot>
    </screenshots>
 +  <releases>
-+    <release date="2018-03-08" version="2.13.0"/>
++    <release date="2020-06-11" version="2.14.1"/>
 +  </releases>
    <updatecontact>devel@pidgin.im</updatecontact>
 +  <content_rating type="oars-1.1">
