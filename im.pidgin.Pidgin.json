@@ -1,7 +1,7 @@
 {
   "id": "im.pidgin.Pidgin",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.36",
+  "runtime-version": "3.38",
   "sdk": "org.gnome.Sdk",
   "command": "pidgin",
   "rename-icon": "pidgin",
@@ -56,12 +56,25 @@
     },
     {
       "name": "farstream",
+      "rm-configure": true,
       "sources": [
         {
           "type": "archive",
           "url": "http://freedesktop.org/software/farstream/releases/farstream/farstream-0.2.8.tar.gz",
           "sha256": "2b3b9c6b4f64ace8c83e03d1da5c5a2884c1cae10b35471072b574201ab38908"
+        },
+        {
+          "type": "patch",
+          "path": "farstream-make-4.3.patch"
+        },
+        {
+          "type": "script",
+          "commands": [
+            "autoreconf -sfi"
+          ],
+          "dest-filename": "autogen.sh"
         }
+
       ]
     },
     {
