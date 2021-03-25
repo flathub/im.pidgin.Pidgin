@@ -1,7 +1,7 @@
 {
   "id": "im.pidgin.Pidgin",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.38",
+  "runtime-version": "40",
   "sdk": "org.gnome.Sdk",
   "command": "pidgin",
   "rename-icon": "pidgin",
@@ -60,8 +60,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://freedesktop.org/software/farstream/releases/farstream/farstream-0.2.8.tar.gz",
-          "sha256": "2b3b9c6b4f64ace8c83e03d1da5c5a2884c1cae10b35471072b574201ab38908"
+          "url": "http://freedesktop.org/software/farstream/releases/farstream/farstream-0.2.9.tar.gz",
+          "sha256": "cb7d112433cf7c2e37a8ec918fb24f0ea5cb293cfa1002488e431de26482f47b"
         },
         {
           "type": "patch",
@@ -106,8 +106,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://ftp.gnu.org/gnu/libidn/libidn-1.35.tar.gz",
-          "sha256": "f11af1005b46b7b15d057d7f107315a1ad46935c7fcdf243c16e46ec14f0fe1e"
+          "url": "https://ftp.gnu.org/gnu/libidn/libidn-1.36.tar.gz",
+          "sha256": "14b67108344d81ba844631640df77c9071d9fb0659b080326ff5424e86b14038"
         }
       ]
     },
@@ -141,8 +141,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.8.5.tar.bz2",
-          "sha256": "3b4a2a94cb637eff5bdebbcaf46f4d95c4f25206f459809339cdada0eb577ac3"
+          "url": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.9.2.tar.bz2",
+          "sha256": "b2c10d091513b271e47177274607b1ffba3d95b188bbfa8797f948aec9053c5a"
         }
       ]
     },
