@@ -184,8 +184,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://sourceforge.net/projects/pidgin/files/Pidgin/2.14.1/pidgin-2.14.1.tar.bz2",
-          "sha256": "f132e18d551117d9e46acce29ba4f40892a86746c366999166a3862b51060780"
+          "url": "https://sourceforge.net/projects/pidgin/files/Pidgin/2.14.2/pidgin-2.14.2.tar.bz2",
+          "sha256": "19654ad276b149646371fbdac21bc7620742f2975f7399fed0ffc1a18fbaf603"
         },
         {
           "type": "patch",
@@ -194,9 +194,7 @@
       ],
       "post-install": [
         "chmod 755 /app/lib/pidgin/perl/auto/Pidgin/Pidgin.so",
-        "chmod 755 /app/lib/purple-2/perl/auto/Purple/Purple.so",
-        "sed -i 's/\\.<\\//<\\//g' /app/share/appdata/pidgin.appdata.xml",
-        "sed -i 's|www.pidgin.im/shared/img|old.pidgin.im/shared/img|g' /app/share/appdata/pidgin.appdata.xml"
+        "chmod 755 /app/lib/purple-2/perl/auto/Purple/Purple.so"
       ]
     },
     {
