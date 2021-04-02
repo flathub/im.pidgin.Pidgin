@@ -194,7 +194,8 @@
       ],
       "post-install": [
         "chmod 755 /app/lib/pidgin/perl/auto/Pidgin/Pidgin.so",
-        "chmod 755 /app/lib/purple-2/perl/auto/Purple/Purple.so"
+        "chmod 755 /app/lib/purple-2/perl/auto/Purple/Purple.so",
+        "sed -i 's/\\.<\\//<\\//g' /app/share/appdata/pidgin.appdata.xml"        
       ]
     },
     {
