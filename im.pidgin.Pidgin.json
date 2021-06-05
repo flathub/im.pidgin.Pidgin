@@ -179,7 +179,8 @@
         "--with-python=python3",
         "--disable-gnutls",
         "--with-system-ssl-certs=/etc/ssl/certs",
-        "--disable-doxygen"
+        "--disable-doxygen",
+        "--disable-gevolution"
       ],
       "sources": [
         {
