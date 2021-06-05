@@ -184,8 +184,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://sourceforge.net/projects/pidgin/files/Pidgin/2.14.2/pidgin-2.14.2.tar.bz2",
-          "sha256": "19654ad276b149646371fbdac21bc7620742f2975f7399fed0ffc1a18fbaf603"
+          "url": "https://sourceforge.net/projects/pidgin/files/Pidgin/2.14.5/pidgin-2.14.5.tar.bz2",
+          "sha256": "26db80d2a3c1e740952757bd53c15b8fc8dd780dc8819a74b53b2ef3bfaf041f"
         },
         {
           "type": "patch",
