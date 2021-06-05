@@ -106,8 +106,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://ftp.gnu.org/gnu/libidn/libidn-1.36.tar.gz",
-          "sha256": "14b67108344d81ba844631640df77c9071d9fb0659b080326ff5424e86b14038"
+          "url": "https://ftp.gnu.org/gnu/libidn/libidn-1.37.tar.gz",
+          "sha256": "3c8e970d5cd80a8cb56f59c61611535336343942e3f1c81b0190c69993a692c2"
         }
       ]
     },
@@ -141,8 +141,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.9.2.tar.bz2",
-          "sha256": "b2c10d091513b271e47177274607b1ffba3d95b188bbfa8797f948aec9053c5a"
+          "url": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.9.3.tar.bz2",
+          "sha256": "97ebe4f94e2f7e35b752194ce15a0f3c66324e0ff6af26659bbfb5ff2ec328fd"
         }
       ]
     },
@@ -161,8 +161,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.110.tar.gz",
-          "sha256": "7ce4760cf66c69148f6bd6c92feaabb8812dee30846b24cd0f7395c436d7e825"
+          "url": "https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz",
+          "sha256": "7d550dccdfcd286e33895501829ed971eeb65c614e73aadb4a08aeef719b143a"
         }
       ]
     },
@@ -196,7 +196,7 @@
       "post-install": [
         "chmod 755 /app/lib/pidgin/perl/auto/Pidgin/Pidgin.so",
         "chmod 755 /app/lib/purple-2/perl/auto/Purple/Purple.so",
-        "sed -i 's/\\.<\\//<\\//g' /app/share/appdata/pidgin.appdata.xml"        
+        "sed -i 's/\\.<\\//<\\//g' /app/share/metainfo/pidgin.appdata.xml"        
       ]
     },
     {
