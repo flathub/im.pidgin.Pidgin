@@ -141,8 +141,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.9.3.tar.bz2",
-          "sha256": "97ebe4f94e2f7e35b752194ce15a0f3c66324e0ff6af26659bbfb5ff2ec328fd"
+          "url": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.9.4.tar.bz2",
+          "sha256": "ea849c83a72454e3ed4267697e8ca03390aee972ab421e7df69dfe42b65caaf7"
         }
       ]
     },
@@ -185,8 +185,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://sourceforge.net/projects/pidgin/files/Pidgin/2.14.7/pidgin-2.14.7.tar.bz2",
-          "sha256": "fea6ab4f0572fe24646049c2b3fecbdca27abca6d06e95bd655e44db99bd69fe"
+          "url": "https://sourceforge.net/projects/pidgin/files/Pidgin/2.14.8/pidgin-2.14.8.tar.bz2",
+          "sha256": "3f8085c0211c4ca1ba9f8a03889b3d60738432c1673b57b0086070ef6e094cca"
         },
         {
           "type": "patch",
