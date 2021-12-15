@@ -191,6 +191,10 @@
         {
           "type": "patch",
           "path": "appdata.patch"
+        },
+        {
+          "type": "patch",
+          "path": "add_wm_class.patch"
         }
       ],
       "post-install": [
