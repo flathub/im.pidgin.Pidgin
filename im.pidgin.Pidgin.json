@@ -39,7 +39,13 @@
         {
           "type": "archive",
           "url": "https://sourceforge.net/projects/gtkspell/files/2.0.16/gtkspell-2.0.16.tar.gz",
-          "sha256": "8fc7dc560167b2cb7193e76aca625a152dc19b0ebf49816b78539cbb90d80d02"
+          "sha256": "8fc7dc560167b2cb7193e76aca625a152dc19b0ebf49816b78539cbb90d80d02",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 13110,
+            "stable-only": true,
+            "url-template": "https://sourceforge.net/projects/gtkspell/files/$version/gtkspell-$version.tar.gz"
+          }
         },
         {
           "type": "patch",
@@ -61,7 +67,13 @@
         {
           "type": "archive",
           "url": "http://freedesktop.org/software/farstream/releases/farstream/farstream-0.2.9.tar.gz",
-          "sha256": "cb7d112433cf7c2e37a8ec918fb24f0ea5cb293cfa1002488e431de26482f47b"
+          "sha256": "cb7d112433cf7c2e37a8ec918fb24f0ea5cb293cfa1002488e431de26482f47b",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 13757,
+            "stable-only": true,
+            "url-template": "http://freedesktop.org/software/farstream/releases/farstream/farstream-$version.tar.gz"
+          }
         },
         {
           "type": "patch",
@@ -96,8 +108,14 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://avahi.org/download/avahi-0.7.tar.gz",
-          "sha256": "57a99b5dfe7fdae794e3d1ee7a62973a368e91e414bd0dfa5d84434de5b14804"
+          "url": "https://avahi.org/download/avahi-0.8.tar.gz",
+          "sha256": "060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 147,
+            "stable-only": true,
+            "url-template": "https://avahi.org/download/avahi-$version.tar.gz"
+          }
         }
       ]
     },
@@ -107,7 +125,13 @@
         {
           "type": "archive",
           "url": "https://ftp.gnu.org/gnu/libidn/libidn-1.38.tar.gz",
-          "sha256": "de00b840f757cd3bb14dd9a20d5936473235ddcba06d4bc2da804654b8bbf0f6"
+          "sha256": "de00b840f757cd3bb14dd9a20d5936473235ddcba06d4bc2da804654b8bbf0f6",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 1639,
+            "stable-only": true,
+            "url-template": "https://ftp.gnu.org/gnu/libidn/libidn-$version.tar.gz"
+          }
         }
       ]
     },
@@ -132,7 +156,13 @@
         {
           "type": "archive",
           "url": "https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.27/cyrus-sasl-2.1.27.tar.gz",
-          "sha256": "26866b1549b00ffd020f188a43c258017fa1c382b3ddadd8201536f72efb05d5"
+          "sha256": "26866b1549b00ffd020f188a43c258017fa1c382b3ddadd8201536f72efb05d5",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 13280,
+            "stable-only": true,
+            "url-template": "https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-$version/cyrus-sasl-$version.tar.gz"
+          }
         }
       ]
     },
@@ -140,9 +170,16 @@
       "name": "libgcrypt",
       "sources": [
         {
-          "type": "archive",
-          "url": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.9.4.tar.bz2",
-          "sha256": "ea849c83a72454e3ed4267697e8ca03390aee972ab421e7df69dfe42b65caaf7"
+          "type": "git",
+          "url": "https://dev.gnupg.org/source/libgcrypt.git",
+          "tag": "libgcrypt-1.10.1",
+          "commit": "ae0e567820c37f9640440b3cff77d7c185aa6742",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 1623,
+            "stable-only": true,
+            "tag-template": "libgcrypt-$version"
+          }
         }
       ]
     },
@@ -152,7 +189,13 @@
         {
           "type": "archive",
           "url": "https://otr.cypherpunks.ca/libotr-4.1.1.tar.gz",
-          "sha256": "8b3b182424251067a952fb4e6c7b95a21e644fbb27fbd5f8af2b2ed87ca419f5"
+          "sha256": "8b3b182424251067a952fb4e6c7b95a21e644fbb27fbd5f8af2b2ed87ca419f5",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 13303,
+            "stable-only": true,
+            "url-template": "https://otr.cypherpunks.ca/libotr-$version.tar.gz"
+          }
         }
       ]
     },
@@ -162,7 +205,13 @@
         {
           "type": "archive",
           "url": "https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz",
-          "sha256": "7d550dccdfcd286e33895501829ed971eeb65c614e73aadb4a08aeef719b143a"
+          "sha256": "7d550dccdfcd286e33895501829ed971eeb65c614e73aadb4a08aeef719b143a",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 1979,
+            "stable-only": true,
+            "url-template": "https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-$version.tar.gz"
+          }
         }
       ]
     },
@@ -185,8 +234,14 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://sourceforge.net/projects/pidgin/files/Pidgin/2.14.8/pidgin-2.14.8.tar.bz2",
-          "sha256": "3f8085c0211c4ca1ba9f8a03889b3d60738432c1673b57b0086070ef6e094cca"
+          "url": "https://downloads.sourceforge.net/project/pidgin/Pidgin/2.14.8/pidgin-2.14.8.tar.bz2",
+          "sha256": "3f8085c0211c4ca1ba9f8a03889b3d60738432c1673b57b0086070ef6e094cca",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 3636,
+            "stable-only": true,
+            "url-template": "https://downloads.sourceforge.net/project/pidgin/Pidgin/$version/pidgin-$version.tar.bz2"
+          }
         },
         {
           "type": "patch",
@@ -209,7 +264,13 @@
         {
           "type": "archive",
           "url": "https://otr.cypherpunks.ca/pidgin-otr-4.0.2.tar.gz",
-          "sha256": "f4b59eef4a94b1d29dbe0c106dd00cdc630e47f18619fc754e5afbf5724ebac4"
+          "sha256": "f4b59eef4a94b1d29dbe0c106dd00cdc630e47f18619fc754e5afbf5724ebac4",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 10240,
+            "stable-only": true,
+            "url-template": "https://otr.cypherpunks.ca/pidgin-otr-$version.tar.gz"
+          }
         }
       ]
     }
