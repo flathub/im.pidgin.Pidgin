@@ -103,7 +103,8 @@
         "--disable-python",
         "--disable-gtk",
         "--disable-gtk3",
-        "--disable-static"
+        "--disable-static",
+        "--disable-libevent"
       ],
       "sources": [
         {
