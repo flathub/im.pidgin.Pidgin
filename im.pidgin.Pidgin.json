@@ -170,6 +170,10 @@
     },
     {
       "name": "libgcrypt",
+      "config-opts": [
+        "--disable-static",
+        "--disable-doc"
+      ],
       "sources": [
         {
           "type": "git",
