@@ -186,11 +186,19 @@
             "stable-only": true,
             "tag-template": "libgcrypt-$version"
           }
+        },
+        {
+          "type": "shell",
+          "commands": [
+            "sed -i 's:t-secmem::' tests/Makefile.am",
+            "sed -i 's:t-sexp::' tests/Makefile.am"
+          ]
         }
       ]
     },
     {
       "name": "libotr",
+      "rm-configure": true,
       "sources": [
         {
           "type": "archive",
@@ -202,6 +210,12 @@
             "stable-only": true,
             "url-template": "https://otr.cypherpunks.ca/libotr-$version.tar.gz"
           }
+        },
+        {
+          "type": "shell",
+          "commands": [
+            "sed -i '1 i\#include <sys/socket.h>' tests/regression/client/client.c"
+          ]
         }
       ]
     },
