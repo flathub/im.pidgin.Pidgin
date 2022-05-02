@@ -6,7 +6,6 @@
     "command": "pidgin",
     "rename-icon": "pidgin",
     "rename-desktop-file": "pidgin.desktop",
-    "rename-appdata-file": "pidgin.appdata.xml",
     "finish-args": [
         "--share=ipc",
         "--socket=x11",
@@ -261,12 +260,13 @@
                         "type": "anitya",
                         "project-id": 3636,
                         "stable-only": true,
+                        "is-main-source": true,
                         "url-template": "https://downloads.sourceforge.net/project/pidgin/Pidgin/$version/pidgin-$version.tar.bz2"
                     }
                 },
                 {
-                    "type": "patch",
-                    "path": "appdata.patch"
+                    "type": "file",
+                    "path": "im.pidgin.Pidgin.appdata.xml"
                 },
                 {
                     "type": "patch",
@@ -276,7 +276,7 @@
             "post-install": [
                 "chmod 755 /app/lib/pidgin/perl/auto/Pidgin/Pidgin.so",
                 "chmod 755 /app/lib/purple-2/perl/auto/Purple/Purple.so",
-                "sed -i 's/\\.<\\//<\\//g' /app/share/metainfo/pidgin.appdata.xml"
+                "install -Dm644 im.pidgin.Pidgin.appdata.xml /app/share/appdata/im.pidgin.Pidgin.appdata.xml"
             ]
         },
         {
