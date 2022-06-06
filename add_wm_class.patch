@@ -1,22 +1,9 @@
-From 339ccaf7cc170c90f9f888de0e1c2e99620b7d05 Mon Sep 17 00:00:00 2001
-From: Stan Janssen <stan@finetuned.nl>
-Date: Wed, 15 Dec 2021 10:26:15 +0100
-Subject: [PATCH] Add StartupWMClass to .desktop
-
----
- pidgin/data/pidgin.desktop.in.in | 1 +
- 1 file changed, 1 insertion(+)
-
-diff --git a/pidgin/data/pidgin.desktop.in.in b/pidgin/data/pidgin.desktop.in.in
-index 7662fae..c4161ff 100644
---- a/pidgin/data/pidgin.desktop.in.in
-+++ b/pidgin/data/pidgin.desktop.in.in
-@@ -8,4 +8,5 @@ StartupNotify=true
+diff -r f373c5662415 pidgin/data/pidgin.desktop.in.in
+--- a/pidgin/data/pidgin.desktop.in.in	Thu Jun 02 21:27:54 2022 -0500
++++ b/pidgin/data/pidgin.desktop.in.in	Sat Jun 04 09:24:19 2022 +0200
+@@ -11,4 +11,5 @@
  Terminal=false
  Type=Application
- Categories=Network;InstantMessaging;
+ Categories=GTK;Network;InstantMessaging;
 +StartupWMClass=Pidgin
  @USES_MM_CHAT_SECTION@
--- 
-2.25.1
-
