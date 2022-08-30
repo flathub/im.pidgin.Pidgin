@@ -126,8 +126,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ftp.gnu.org/gnu/libidn/libidn-1.38.tar.gz",
-                    "sha256": "de00b840f757cd3bb14dd9a20d5936473235ddcba06d4bc2da804654b8bbf0f6",
+                    "url": "https://ftp.gnu.org/gnu/libidn/libidn-1.41.tar.gz",
+                    "sha256": "884d706364b81abdd17bee9686d8ff2ae7431c5a14651047c68adf8b31fd8945",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1639,
@@ -157,8 +157,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.27/cyrus-sasl-2.1.27.tar.gz",
-                    "sha256": "26866b1549b00ffd020f188a43c258017fa1c382b3ddadd8201536f72efb05d5",
+                    "url": "https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz",
+                    "sha256": "7ccfc6abd01ed67c1a0924b353e526f1b766b21f42d4562ee635a8ebfc5bb38c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13280,
