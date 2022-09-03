@@ -1,9 +1,5 @@
 {
   "name": "bot-sentry",
-  "post-install": [
-    "mv config.guess-new config.guess",
-    "mv config.sub-new config.sub"
-  ],
   "sources": [
     {
       "type": "archive",
@@ -12,11 +8,11 @@
     },
     {
       "type": "file",
-      "path": "config.guess-new"
+      "path": "config.guess"
     },
     {
       "type": "file",
-      "path": "config.sub-new"
+      "path": "config.sub"
     }
   ]
 }
