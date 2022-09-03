@@ -230,6 +230,6 @@
         },
         "plugins/pidgin-otr.json",
         "plugins/purple-plugin-pack.json",
-        "plugins/bot-sentry.json"
+        "plugins/bot-sentry/bot-sentry.json"
     ]
 }
