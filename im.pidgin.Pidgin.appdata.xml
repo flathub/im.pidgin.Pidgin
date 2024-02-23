@@ -143,6 +143,10 @@
   <url type="help">https://pidgin.im/help/</url>
 
   <update_contact>devel@pidgin.im</update_contact>
+  
+  <developer id="im.pidgin">
+    <name>Gary Kramlich</name>
+  </developer>
 
   <translation type="gettext">pidgin</translation>
 
