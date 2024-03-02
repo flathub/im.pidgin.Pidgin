@@ -135,6 +135,9 @@
       <caption xml:lang="sl">Seznam prijateljev prikazuje prijatelje z različnih omrežij.</caption>
       <caption xml:lang="sq">Listë shokësh që shfaq shokë në rrjete të ndryshme</caption>
     </screenshot>
+    <screenshot type="thumbnail">
+      <image width="48" height="105">https://raw.githubusercontent.com/flathub/im.pidgin.Pidgin/2c3f0bce0321d097d138882318003c339c261c68/contact_window_thumb.png</image>
+    </screenshot>
   </screenshots>
 
   <url type="homepage">https://pidgin.im/</url>
