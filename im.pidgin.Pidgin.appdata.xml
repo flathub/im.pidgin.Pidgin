@@ -126,14 +126,16 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/flathub/im.pidgin.Pidgin/1acad216a11997db5ac4afd5517f7905acc8f938/contact_window.png</image>
-        <caption>Buddy list showing friends on different networks</caption>
-        <caption xml:lang="cs">Seznam kamarádů zobrazuje kamarády na různých sítích.</caption>
-      <caption xml:lang="de">Freundesliste zeigt Freunde in verschiedenen Netzwerken</caption>
-      <caption xml:lang="pl">Lista znajomych wyświetlająca osoby używające różnych sieci</caption>
-      <caption xml:lang="ro">Lista de prieteni care arată prietenii din diferite rețele</caption>
-      <caption xml:lang="sl">Seznam prijateljev prikazuje prijatelje z različnih omrežij.</caption>
-      <caption xml:lang="sq">Listë shokësh që shfaq shokë në rrjete të ndryshme</caption>
+      <image>https://raw.githubusercontent.com/flathub/im.pidgin.Pidgin/c3a85550ee1fd9e634d9cc806da44d3974b86bf4/chat_window.png</image>
+      <caption>Chat window showing multiple chats</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/im.pidgin.Pidgin/c3a85550ee1fd9e634d9cc806da44d3974b86bf4/empty_buddy_list.png</image>
+      <caption>Buddy list showing friends on different networks</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/im.pidgin.Pidgin/c3a85550ee1fd9e634d9cc806da44d3974b86bf4/preferences.png</image>
+      <caption>Preference window</caption>
     </screenshot>
   </screenshots>
 
