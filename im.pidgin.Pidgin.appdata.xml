@@ -126,14 +126,16 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://old.pidgin.im/shared/img/contact_window.png</image>
+      <image>https://raw.githubusercontent.com/flathub/im.pidgin.Pidgin/c3a85550ee1fd9e634d9cc806da44d3974b86bf4/screenshots/chat_window.png</image>
+      <caption>Chat window showing multiple chats</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/im.pidgin.Pidgin/c3a85550ee1fd9e634d9cc806da44d3974b86bf4/screenshots/empty_buddy_list.png</image>
       <caption>Buddy list showing friends on different networks</caption>
-      <caption xml:lang="cs">Seznam kamarádů zobrazuje kamarády na různých sítích.</caption>
-      <caption xml:lang="de">Freundesliste zeigt Freunde in verschiedenen Netzwerken</caption>
-      <caption xml:lang="pl">Lista znajomych wyświetlająca osoby używające różnych sieci</caption>
-      <caption xml:lang="ro">Lista de prieteni care arată prietenii din diferite rețele</caption>
-      <caption xml:lang="sl">Seznam prijateljev prikazuje prijatelje z različnih omrežij.</caption>
-      <caption xml:lang="sq">Listë shokësh që shfaq shokë në rrjete të ndryshme</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/flathub/im.pidgin.Pidgin/c3a85550ee1fd9e634d9cc806da44d3974b86bf4/screenshots/preferences.png</image>
+      <caption>Preference window</caption>
     </screenshot>
   </screenshots>
 
@@ -143,6 +145,10 @@
   <url type="help">https://pidgin.im/help/</url>
 
   <update_contact>devel@pidgin.im</update_contact>
+
+  <developer id="im.pidgin">
+    <name>Gary Kramlich</name>
+  </developer>
 
   <translation type="gettext">pidgin</translation>
 
@@ -154,6 +160,7 @@
   </content_rating>
 
   <releases>
+    <release version="2.14.13" date="2024-02-23"/>
     <release version="2.14.12" date="2023-01-01"/>
     <release version="2.14.10" date="2022-06-03"/>
     <release version="2.14.9" date="2022-04-28"/>
