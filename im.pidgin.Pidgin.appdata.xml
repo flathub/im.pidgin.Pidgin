@@ -127,16 +127,13 @@
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/flathub/im.pidgin.Pidgin/1acad216a11997db5ac4afd5517f7905acc8f938/contact_window.png</image>
-      <caption>Buddy list showing friends on different networks</caption>
-      <caption xml:lang="cs">Seznam kamarádů zobrazuje kamarády na různých sítích.</caption>
+        <caption>Buddy list showing friends on different networks</caption>
+        <caption xml:lang="cs">Seznam kamarádů zobrazuje kamarády na různých sítích.</caption>
       <caption xml:lang="de">Freundesliste zeigt Freunde in verschiedenen Netzwerken</caption>
       <caption xml:lang="pl">Lista znajomych wyświetlająca osoby używające różnych sieci</caption>
       <caption xml:lang="ro">Lista de prieteni care arată prietenii din diferite rețele</caption>
       <caption xml:lang="sl">Seznam prijateljev prikazuje prijatelje z različnih omrežij.</caption>
       <caption xml:lang="sq">Listë shokësh që shfaq shokë në rrjete të ndryshme</caption>
-    </screenshot>
-    <screenshot type="thumbnail">
-      <image width="48" height="105">https://raw.githubusercontent.com/flathub/im.pidgin.Pidgin/2c3f0bce0321d097d138882318003c339c261c68/contact_window_thumb.png</image>
     </screenshot>
   </screenshots>
 
@@ -146,7 +143,7 @@
   <url type="help">https://pidgin.im/help/</url>
 
   <update_contact>devel@pidgin.im</update_contact>
-  
+
   <developer id="im.pidgin">
     <name>Gary Kramlich</name>
   </developer>
