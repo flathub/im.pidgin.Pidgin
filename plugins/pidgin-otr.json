@@ -1,69 +1,89 @@
 {
-    "name": "pidgin-otr",
-    "sources": [
+  "name": "pidgin-otr",
+  "sources": [
+    {
+      "type": "archive",
+      "url": "https://otr.cypherpunks.ca/pidgin-otr-4.0.2.tar.gz",
+      "sha256": "f4b59eef4a94b1d29dbe0c106dd00cdc630e47f18619fc754e5afbf5724ebac4",
+      "x-checker-data": {
+        "type": "anitya",
+        "project-id": 10240,
+        "stable-only": true,
+        "url-template": "https://otr.cypherpunks.ca/pidgin-otr-$version.tar.gz"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "name": "libgpg-error",
+      "config-opts": [
+        "--disable-static",
+        "--disable-doc"
+      ],
+      "sources": [
         {
-            "type": "archive",
-            "url": "https://otr.cypherpunks.ca/pidgin-otr-4.0.2.tar.gz",
-            "sha256": "f4b59eef4a94b1d29dbe0c106dd00cdc630e47f18619fc754e5afbf5724ebac4",
-            "x-checker-data": {
-                "type": "anitya",
-                "project-id": 10240,
-                "stable-only": true,
-                "url-template": "https://otr.cypherpunks.ca/pidgin-otr-$version.tar.gz"
-            }
+          "type": "archive",
+          "url": "https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.50.tar.bz2",
+          "sha256": "69405349e0a633e444a28c5b35ce8f14484684518a508dc48a089992fe93e20a",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 1628,
+            "stable-only": true,
+            "url-template": "https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-$version.tar.bz2"
+          }
         }
-    ],
-    "modules": [
+      ]
+    },
+    {
+      "name": "libgcrypt",
+      "config-opts": [
+        "--disable-static",
+        "--disable-doc"
+      ],
+      "sources": [
         {
-            "name": "libgcrypt",
-            "config-opts": [
-                "--disable-static",
-                "--disable-doc"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://dev.gnupg.org/source/libgcrypt.git",
-                    "tag": "libgcrypt-1.10.3",
-                    "commit": "aa1610866f8e42bdc272584f0a717f32ee050a22",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 1623,
-                        "stable-only": true,
-                        "tag-template": "libgcrypt-$version"
-                    }
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "sed -i 's:t-secmem::' tests/Makefile.am",
-                        "sed -i 's:t-sexp::' tests/Makefile.am"
-                    ]
-                }
-            ]
+          "type": "git",
+          "url": "https://dev.gnupg.org/source/libgcrypt.git",
+          "tag": "libgcrypt-1.11.0",
+          "commit": "9d94d7846cde272b8b1519ba96e53967bf0b90d2",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 1623,
+            "stable-only": true,
+            "tag-template": "libgcrypt-$version"
+          }
         },
         {
-            "name": "libotr",
-            "rm-configure": true,
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://otr.cypherpunks.ca/libotr-4.1.1.tar.gz",
-                    "sha256": "8b3b182424251067a952fb4e6c7b95a21e644fbb27fbd5f8af2b2ed87ca419f5",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 13303,
-                        "stable-only": true,
-                        "url-template": "https://otr.cypherpunks.ca/libotr-$version.tar.gz"
-                    }
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "sed -i '1 i#include <sys/socket.h>' tests/regression/client/client.c"
-                    ]
-                }
-            ]
+          "type": "shell",
+          "commands": [
+            "sed -i 's:t-secmem::' tests/Makefile.am",
+            "sed -i 's:t-sexp::' tests/Makefile.am"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "name": "libotr",
+      "rm-configure": true,
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://otr.cypherpunks.ca/libotr-4.1.1.tar.gz",
+          "sha256": "8b3b182424251067a952fb4e6c7b95a21e644fbb27fbd5f8af2b2ed87ca419f5",
+          "x-checker-data": {
+            "type": "anitya",
+            "project-id": 13303,
+            "stable-only": true,
+            "url-template": "https://otr.cypherpunks.ca/libotr-$version.tar.gz"
+          }
+        },
+        {
+          "type": "shell",
+          "commands": [
+            "sed -i '1 i#include <sys/socket.h>' tests/regression/client/client.c"
+          ]
+        }
+      ]
+    }
+  ]
 }
