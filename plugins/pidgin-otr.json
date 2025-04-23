@@ -23,8 +23,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.51.tar.bz2",
-                    "sha256": "be0f1b2db6b93eed55369cdf79f19f72750c8c7c39fc20b577e724545427e6b2",
+                    "url": "https://gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.54.tar.bz2",
+                    "sha256": "607dcadfd722120188eca5cd07193158b9dd906b578a557817ec779bd5e16d0e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1628,
@@ -57,7 +57,10 @@
                     "type": "shell",
                     "commands": [
                         "sed -i 's:t-secmem::' tests/Makefile.am",
-                        "sed -i 's:t-sexp::' tests/Makefile.am"
+                        "sed -i 's:t-sexp::' tests/Makefile.am",
+                        "echo \"#!/bin/sh\" > /app/bin/libgcrypt-config",
+                        "echo \"pkg-config \\$@ libgcrypt\" >> /app/bin/libgcrypt-config",
+                        "chmod a+x /app/bin/libgcrypt-config"
                     ]
                 }
             ]
