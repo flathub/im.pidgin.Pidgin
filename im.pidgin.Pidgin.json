@@ -1,7 +1,7 @@
 {
     "id": "im.pidgin.Pidgin",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "48",
     "sdk": "org.gnome.Sdk",
     "command": "pidgin",
     "rename-icon": "pidgin",
@@ -126,8 +126,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ftp.gnu.org/gnu/libidn/libidn-1.42.tar.gz",
-                    "sha256": "d6c199dcd806e4fe279360cb4b08349a0d39560ed548ffd1ccadda8cdecb4723",
+                    "url": "https://ftp.gnu.org/gnu/libidn/libidn-1.43.tar.gz",
+                    "sha256": "bdc662c12d041b2539d0e638f3a6e741130cdb33a644ef3496963a443482d164",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1639,
@@ -140,7 +140,7 @@
         {
             "name": "cyrus-sasl2",
             "config-opts": [
-                "--with-dblib=berkeley",
+                "--with-dblib=gdbm",
                 "--without-pam",
                 "--without-opie",
                 "--without-des",
@@ -156,15 +156,9 @@
             "no-parallel-make": true,
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-2.1.28/cyrus-sasl-2.1.28.tar.gz",
-                    "sha256": "7ccfc6abd01ed67c1a0924b353e526f1b766b21f42d4562ee635a8ebfc5bb38c",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 13280,
-                        "stable-only": true,
-                        "url-template": "https://github.com/cyrusimap/cyrus-sasl/releases/download/cyrus-sasl-$version/cyrus-sasl-$version.tar.gz"
-                    }
+                    "type": "git",
+                    "url": "https://github.com/cyrusimap/cyrus-sasl.git",
+                    "commit": "e256dd0cc61d60cbb905b601241077f0a2ba0907"
                 }
             ]
         },

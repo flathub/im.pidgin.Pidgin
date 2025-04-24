@@ -57,7 +57,10 @@
                     "type": "shell",
                     "commands": [
                         "sed -i 's:t-secmem::' tests/Makefile.am",
-                        "sed -i 's:t-sexp::' tests/Makefile.am"
+                        "sed -i 's:t-sexp::' tests/Makefile.am",
+                        "echo \"#!/bin/sh\" > /app/bin/libgcrypt-config",
+                        "echo \"pkg-config \\$@ libgcrypt\" >> /app/bin/libgcrypt-config",
+                        "chmod a+x /app/bin/libgcrypt-config"
                     ]
                 }
             ]
