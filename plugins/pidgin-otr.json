@@ -44,8 +44,8 @@
                 {
                     "type": "git",
                     "url": "https://dev.gnupg.org/source/libgcrypt.git",
-                    "tag": "libgcrypt-1.11.0",
-                    "commit": "9d94d7846cde272b8b1519ba96e53967bf0b90d2",
+                    "tag": "libgcrypt-1.11.1",
+                    "commit": "81ce5321b1b79bde6dfdc3c164efb40c13cf656b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1623,
