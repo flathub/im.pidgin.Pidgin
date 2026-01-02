@@ -143,6 +143,7 @@
   <url type="bugtracker">https://issues.imfreedom.org/issues/PIDGIN</url>
   <url type="faq">https://pidgin.im/development/faq/</url>
   <url type="help">https://pidgin.im/help/</url>
+  <url type="vcs-browser">https://keep.imfreedom.org/pidgin/</url>
 
   <update_contact>devel@pidgin.im</update_contact>
 
@@ -160,9 +161,7 @@
   </content_rating>
 
   <releases>
-    <release version="2.14.14" date="2025-01-23">
-      <description></description>
-    </release>
+    <release version="2.14.14" date="2025-01-23"/>
     <release version="2.14.13" date="2024-02-23"/>
     <release version="2.14.12" date="2023-01-01"/>
     <release version="2.14.10" date="2022-06-03"/>
