@@ -138,31 +138,6 @@
             ]
         },
         {
-            "name": "cyrus-sasl2",
-            "config-opts": [
-                "--with-dblib=gdbm",
-                "--without-pam",
-                "--without-opie",
-                "--without-des",
-                "--disable-gssapi",
-                "--enable-cram",
-                "--enable-scram",
-                "--enable-digest",
-                "--enable-otp",
-                "--enable-plain",
-                "--enable-login",
-                "--with-plugindir=/app/lib/sasl2"
-            ],
-            "no-parallel-make": true,
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/cyrusimap/cyrus-sasl.git",
-                    "commit": "e256dd0cc61d60cbb905b601241077f0a2ba0907"
-                }
-            ]
-        },
-        {
             "name": "dbus-glib",
             "sources": [
                 {
