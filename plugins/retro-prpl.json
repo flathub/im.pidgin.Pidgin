@@ -1,0 +1,19 @@
+{
+  "name": "retro-prpl",
+  "buildsystem": "meson",
+  "config-opts": [
+    "-Dbuildtype=release",
+    "-Dsilc10=disabled",
+    "-Dsilc=disabled",
+    "-Dnovell=disabled",
+    "-Dzephyr=disabled",
+    "-Dgadu-gadu=disabled"
+  ],
+  "sources": [
+    {
+      "type": "git",
+      "url": "https://github.com/pidgin/retro-prpl.git",
+      "commit": "5f1669b9305b912c02fe2daacd7e77fd0da2c748"
+    }
+  ]
+}
