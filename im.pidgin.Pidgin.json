@@ -191,6 +191,27 @@
             ]
         },
         {
+            "name": "discount",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure.sh --shared --prefix=/app --with-id-anchor --with-github-tags --with-fenched-code --with-dl=both --github-checkbox",
+                "make install"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://www.pell.portland.or.us/~orc/Code/discount/discount-2.2.7e.tar.bz2",
+                    "sha256": "82249a3d50a09aac29245990bf9c6139c0ae48707b7dab1268daf851f9db963b",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 14521,
+                        "stable-only": true,
+                        "url-template": "http://www.pell.portland.or.us/~orc/Code/discount/discount-$version.tar.bz2"
+                    }
+                }
+            ]
+        },
+        {
             "name": "pidgin",
             "config-opts": [
                 "--disable-static",
@@ -238,6 +259,7 @@
         "plugins/purple-plugin-pack.json",
         "plugins/bot-sentry/bot-sentry.json",
         "plugins/retro-prpl.json",
-        "plugins/purple-googlechat.json"
+        "plugins/purple-googlechat.json",
+        "plugins/purple-rocketchat.json"
     ]
 }

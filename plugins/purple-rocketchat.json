@@ -1,0 +1,14 @@
+{
+  "name": "purple-rocketchat",
+  "buildsystem": "simple",
+  "build-commands": [
+    "make install"
+  ],
+  "sources": [
+    {
+      "type": "git",
+      "url": "https://github.com/EionRobb/purple-rocketchat.git",
+      "commit": "8d3a6b05a048554f19d9af15dce63220b80f5095"
+    }
+  ]
+}
