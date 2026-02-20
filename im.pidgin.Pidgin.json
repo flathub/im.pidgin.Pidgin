@@ -154,6 +154,43 @@
             ]
         },
         {
+            "name": "protobuf",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-Dprotobuf_BUILD_TESTS=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/protocolbuffers/protobuf/releases/download/v33.5/protobuf-33.5.tar.gz",
+                    "sha256": "c6c7c27fadc19d40ab2eaa23ff35debfe01f6494a8345559b9bb285ce4144dd1",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 3715,
+                        "stable-only": true,
+                        "url-template": "https://github.com/protocolbuffers/protobuf/releases/download/v$version/protobuf-$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "protobuf-c",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/protobuf-c/protobuf-c/releases/download/v1.5.2/protobuf-c-1.5.2.tar.gz",
+                    "sha256": "e2c86271873a79c92b58fef7ebf8de1aa0df4738347a8bd5d4e65a80a16d0d24",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 3716,
+                        "stable-only": true,
+                        "url-template": "https://github.com/protobuf-c/protobuf-c/releases/download/v$version/protobuf-c-$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
             "name": "pidgin",
             "config-opts": [
                 "--disable-static",
@@ -200,6 +237,7 @@
         "plugins/pidgin-otr.json",
         "plugins/purple-plugin-pack.json",
         "plugins/bot-sentry/bot-sentry.json",
-        "plugins/retro-prpl.json"
+        "plugins/retro-prpl.json",
+        "plugins/purple-googlechat.json"
     ]
 }

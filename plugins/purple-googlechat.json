@@ -1,0 +1,14 @@
+{
+  "name": "purple-googlechat",
+  "buildsystem": "simple",
+  "build-commands": [
+    "make install"
+  ],
+  "sources": [
+    {
+      "type": "git",
+      "url": "https://github.com/EionRobb/purple-googlechat.git",
+      "commit": "31ec14348ade6d624deff48eaddf088f06bf849c"
+    }
+  ]
+}
