@@ -1,7 +1,7 @@
 {
     "id": "im.pidgin.Pidgin",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "pidgin",
     "rename-icon": "pidgin",
@@ -165,12 +165,12 @@
                     "type": "archive",
                     "url": "https://github.com/protocolbuffers/protobuf/releases/download/v33.5/protobuf-33.5.tar.gz",
                     "sha256": "c6c7c27fadc19d40ab2eaa23ff35debfe01f6494a8345559b9bb285ce4144dd1",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 3715,
-                        "stable-only": true,
-                        "url-template": "https://github.com/protocolbuffers/protobuf/releases/download/v$version/protobuf-$version.tar.gz"
-                    }
+//                    "x-checker-data": {
+//                        "type": "anitya",
+//                        "project-id": 3715,
+//                        "stable-only": true,
+//                        "url-template": "https://github.com/protocolbuffers/protobuf/releases/download/v$version/protobuf-$version.tar.gz"
+//                    }
                 }
             ]
         },
