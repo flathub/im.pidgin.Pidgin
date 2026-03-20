@@ -163,8 +163,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/protocolbuffers/protobuf/releases/download/v33.5/protobuf-33.5.tar.gz",
-                    "sha256": "c6c7c27fadc19d40ab2eaa23ff35debfe01f6494a8345559b9bb285ce4144dd1",
+                    "url": "https://github.com/protocolbuffers/protobuf/releases/download/v34.1/protobuf-34.1.tar.gz",
+                    "sha256": "e4e6ff10760cf747a2decd1867741f561b216bd60cc4038c87564713a6da1848",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3715,
