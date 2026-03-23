@@ -1,6 +1,9 @@
 {
   "name": "purple-plugin-pack",
   "buildsystem": "meson",
+  "build-options": {
+    "cflags": "-Wno-error=incompatible-pointer-types"
+  },
   "sources": [
     {
       "type": "archive",
